@@ -142,7 +142,7 @@ class Humidifier(Switch):
 
     def __repr__(self):
         """Return a string representation of the device."""
-        return '<WeMo Humidifier "{name}">'.format(name=self.name)
+        return '<"Humidifier", "{name}">'.format(name=self.name)
 
     def update_attributes(self):
         """Request state from device."""

@@ -18,7 +18,7 @@ class Insight(Switch):
 
     def __repr__(self):
         """Return a string representation of the device."""
-        return '<WeMo Insight "{name}">'.format(name=self.name)
+        return '<"Insight", "{name}">'.format(name=self.name)
 
     def update_insight_params(self):
         """Get and parse the device attributes."""

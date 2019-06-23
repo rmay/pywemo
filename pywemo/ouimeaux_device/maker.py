@@ -8,7 +8,7 @@ class Maker(Switch):
 
     def __repr__(self):
         """Return a string representation of the device."""
-        return '<WeMo Maker "{name}">'.format(name=self.name)
+        return '<"Maker", "{name}">'.format(name=self.name)
 
     @property
     def maker_params(self):

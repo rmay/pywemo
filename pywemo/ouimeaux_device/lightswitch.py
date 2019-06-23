@@ -7,7 +7,8 @@ class LightSwitch(Switch):
 
     def __repr__(self):
         """Return a string representation of the device."""
-        return '<WeMo LightSwitch "{name}">'.format(name=self.name)
+        return '<"LightSwitch", "{name}", "{state}">'.format(name=self.name, state=self.get_friendly_state())
+
 
     @property
     def device_type(self):

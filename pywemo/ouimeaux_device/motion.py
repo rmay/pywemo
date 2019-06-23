@@ -7,7 +7,7 @@ class Motion(Device):
 
     def __repr__(self):
         """Return a string representation of the device."""
-        return '<WeMo Motion "{name}">'.format(name=self.name)
+        return '<"Motion", "{name}">'.format(name=self.name)
 
     @property
     def device_type(self):

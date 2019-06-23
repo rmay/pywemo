@@ -74,7 +74,7 @@ class CoffeeMaker(Switch):
 
     def __repr__(self):
         """Return a string representation of the device."""
-        return '<WeMo CoffeeMaker "{name}">'.format(name=self.name)
+        return '<"CoffeeMaker", "{name}">'.format(name=self.name)
 
     def update_attributes(self):
         """Request state from device."""

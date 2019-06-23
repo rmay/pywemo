@@ -225,6 +225,15 @@ class Device(object):
 
         return self._state
 
+    def get_friendly_state(self):
+      state = self.get_state(True)
+      if state == 0:
+        return "Off"
+      elif state == 1:
+        return "On"
+      else:
+        return "Unknown"
+
     def get_service(self, name):
         """Get service object by name."""
         try:
